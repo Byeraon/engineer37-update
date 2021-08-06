@@ -1,0 +1,1 @@
+"use strict";var mobile_flag=!1,mob_menu=document.querySelector(".mobil__menu").addEventListener("click",function(){document.querySelector("nav").style.display="flex"}),nav=document.querySelector("nav").addEventListener("click",function(){document.querySelector("nav").style=""});

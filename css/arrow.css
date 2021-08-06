@@ -1,0 +1,128 @@
+.center-con {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.round-left {
+  margin-left: -2%;
+  transform: rotate(180deg);
+  position: absolute;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+  top: 40%;
+  display: block;
+}
+
+.round-right {
+  margin-right: -2%;
+  position: absolute;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 40%;
+  display: block;
+}
+
+#cta-l {
+  margin-top: -8%;
+  left: 30%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+#cta-r {
+  margin-top: -8%;
+  left: 30%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0px;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  top: 15px;
+}
+.segunda {
+  margin-left: 8px;
+}
+.next {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' viewBox='0 0 512 512'%3E%3Cstyle%3E.st0%7Bfill:black%7D%3C/style%3E%3Cpath class='st0' d='M319.1 217c20.2 20.2 19.9 53.2-.6 73.7s-53.5 20.8-73.7.6l-190-190c-20.1-20.2-19.8-53.2.7-73.7S109 6.8 129.1 27l190 190z'/%3E%3Cpath class='st0' d='M319.1 290.5c20.2-20.2 19.9-53.2-.6-73.7s-53.5-20.8-73.7-.6l-190 190c-20.2 20.2-19.9 53.2.6 73.7s53.5 20.8 73.7.6l190-190z'/%3E%3C/svg%3E");
+}
+
+@keyframes bounceAlpha {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(10px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.arrow.primera.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.round-left:hover .arrow {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.round-left:hover .arrow.primera {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.round-right:hover .arrow {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.round-right:hover .arrow.primera {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
